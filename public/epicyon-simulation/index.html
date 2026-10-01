@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Epicyon — Simulation</title><link rel="stylesheet" href="./styles.css"></head>
+<body><header><h1>EPICYON <span>Motion lab</span></h1><p>Drag to orbit · Scroll to zoom · Enable Objects for sensing and sliding collisions</p></header>
+<main><div class="lab-layout">
+<div class="model-stage"><div class="viewer-loading" id="viewerLoading" role="status">LOADING EPICYON…</div><canvas id="labCanvas"></canvas><div class="model-tools"><button data-tool="resetView">Reset view</button><button data-tool="axes">Joint axes</button><button data-tool="servos">Servo locations</button><button data-tool="com">Centre of mass</button><button data-tool="transparent">Transparent body</button></div><div class="live-telemetry" id="liveTelemetry"><div class="telemetry-head"><span>LIVE JOINT LOAD MODEL</span><b>0.85 kg total</b><button id="telemetryToggle" type="button" aria-expanded="true" aria-label="Minimize live joint load panel">−</button></div><div class="telemetry-grid" id="telemetryGrid"></div><p>Mass and torque are estimated from the commanded pose and active support legs—not measured sensor data.</p></div><div class="sim-warning">SIMULATION ONLY · PHYSICAL TUNING REQUIRED</div></div>
+<aside class="motion-panel"><h3>Motion console</h3><div class="motion-buttons"><button data-motion="stand" class="active">Stand</button><button data-motion="sit">Sit</button><button data-motion="walk">Walk</button><button data-motion="backward">Backward</button><button data-motion="trot">Trot</button><button data-motion="sprint">Sprint <small>experimental</small></button><button data-motion="turnLeft">Turn left</button><button data-motion="turnRight">Turn right</button><button data-motion="wag">Wag tail</button><button data-motion="stop">Stop</button><button data-motion="reset">Reset pose</button></div><div class="sliders"><label>Animation speed <output id="speedOut">1.0×</output><input id="speedSlider" type="range" min="0.4" max="2" step="0.1" value="1"></label><label>Step length <output id="lengthOut">40 mm</output><input id="lengthSlider" type="range" min="16" max="60" step="1" value="40"></label><label>Step height <output id="heightOut">24 mm</output><input id="heightSlider" type="range" min="8" max="38" step="1" value="24"></label><label>Body height <output id="bodyOut">112 mm</output><input id="bodySlider" type="range" min="92" max="120" step="1" value="112"></label></div></aside>
+</div>
+</main>
+<footer>Kinematic demonstration · Estimated loads, not measured torque · Simplified upright-object physics</footer>
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
+<script type="module">
+import('./app.js').catch(error=>{
+  console.error(error);
+  const panel=document.getElementById('viewerLoading');
+  panel.style.display='grid';
+  panel.textContent='Could not load the simulation. Please refresh the page and try again.';
+});
+</script></body></html>

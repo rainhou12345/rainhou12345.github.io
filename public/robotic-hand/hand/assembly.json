@@ -1,0 +1,293 @@
+{
+  "title": "Cross-Palm Robotic Hand \u2014 16-Part Concept",
+  "units": "mm",
+  "orientation": "+Y fingers; +Z palm face; thumb points to the right in front view",
+  "purpose": "original visual simulator concept inspired by L20 architecture; not official Linkerbot CAD or validated fabrication geometry",
+  "thumb_mount": {
+    "rail_origin": [
+      -3,
+      34,
+      0
+    ],
+    "slide_axis": [
+      1,
+      0,
+      0
+    ],
+    "slide_range_mm": [
+      -16,
+      16
+    ],
+    "thumb_base_pivot": [
+      -8,
+      40,
+      22
+    ],
+    "rest_angle_degrees": -79,
+    "yaw_axis": [
+      0,
+      0,
+      1
+    ],
+    "opposition_axis": [
+      1,
+      0,
+      0
+    ],
+    "roll_axis": [
+      0.981627183447664,
+      0.19080899537654492,
+      0
+    ]
+  },
+  "parts": [
+    {
+      "file": "00_palm_cross_track.stl",
+      "name": "00_palm_cross_track",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "finger": null,
+      "section": "palm",
+      "hinge_axis": null
+    },
+    {
+      "file": "01_index_proximal.stl",
+      "name": "01_index_proximal",
+      "pivot": [
+        -29,
+        79,
+        0
+      ],
+      "finger": "index",
+      "section": "proximal",
+      "hinge_axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "02_index_middle.stl",
+      "name": "02_index_middle",
+      "pivot": [
+        -29,
+        115,
+        0
+      ],
+      "finger": "index",
+      "section": "middle",
+      "hinge_axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "03_index_distal.stl",
+      "name": "03_index_distal",
+      "pivot": [
+        -29,
+        145,
+        0
+      ],
+      "finger": "index",
+      "section": "distal",
+      "hinge_axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "04_middle_proximal.stl",
+      "name": "04_middle_proximal",
+      "pivot": [
+        -10,
+        79,
+        0
+      ],
+      "finger": "middle",
+      "section": "proximal",
+      "hinge_axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "05_middle_middle.stl",
+      "name": "05_middle_middle",
+      "pivot": [
+        -10,
+        120,
+        0
+      ],
+      "finger": "middle",
+      "section": "middle",
+      "hinge_axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "06_middle_distal.stl",
+      "name": "06_middle_distal",
+      "pivot": [
+        -10,
+        153,
+        0
+      ],
+      "finger": "middle",
+      "section": "distal",
+      "hinge_axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "07_ring_proximal.stl",
+      "name": "07_ring_proximal",
+      "pivot": [
+        10,
+        79,
+        0
+      ],
+      "finger": "ring",
+      "section": "proximal",
+      "hinge_axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "08_ring_middle.stl",
+      "name": "08_ring_middle",
+      "pivot": [
+        10,
+        118,
+        0
+      ],
+      "finger": "ring",
+      "section": "middle",
+      "hinge_axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "09_ring_distal.stl",
+      "name": "09_ring_distal",
+      "pivot": [
+        10,
+        149,
+        0
+      ],
+      "finger": "ring",
+      "section": "distal",
+      "hinge_axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "10_little_proximal.stl",
+      "name": "10_little_proximal",
+      "pivot": [
+        29,
+        79,
+        0
+      ],
+      "finger": "little",
+      "section": "proximal",
+      "hinge_axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "11_little_middle.stl",
+      "name": "11_little_middle",
+      "pivot": [
+        29,
+        112,
+        0
+      ],
+      "finger": "little",
+      "section": "middle",
+      "hinge_axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "12_little_distal.stl",
+      "name": "12_little_distal",
+      "pivot": [
+        29,
+        139,
+        0
+      ],
+      "finger": "little",
+      "section": "distal",
+      "hinge_axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "13_thumb_guided_carriage.stl",
+      "name": "13_thumb_guided_carriage",
+      "pivot": [
+        -3,
+        34,
+        0
+      ],
+      "finger": "thumb",
+      "section": "carriage",
+      "hinge_axis": null
+    },
+    {
+      "file": "14_thumb_proximal.stl",
+      "name": "14_thumb_proximal",
+      "pivot": [
+        -8,
+        40,
+        22
+      ],
+      "finger": "thumb",
+      "section": "proximal",
+      "hinge_axis": [
+        0.1908,
+        -0.9816,
+        0
+      ]
+    },
+    {
+      "file": "15_thumb_distal.stl",
+      "name": "15_thumb_distal",
+      "pivot": [
+        38.136,
+        48.968,
+        22
+      ],
+      "finger": "thumb",
+      "section": "distal",
+      "hinge_axis": [
+        0.1908,
+        -0.9816,
+        0
+      ]
+    }
+  ]
+}
